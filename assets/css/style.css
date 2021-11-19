@@ -108,6 +108,8 @@ a {
     color: #000;
 }
 
+
+
 section {
     width: 100vw;
     height: 100vh;
@@ -221,8 +223,48 @@ section {
 
     }
 
-    .slide.img img {
-        max-width: 350px;
+    .slide img {
+        max-width: 100%;
     }
 
+}
+
+@media (max-width:1000px) {
+
+    section {
+        height: 1500px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+    }
+
+    .titulo-somos h1 {
+        position: relative;
+
+    }
+
+    .img-equipe {
+        text-align: center;
+
+    }
+
+    .img-equipe img {
+        max-width: 90%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width:720px) {
+
+    .menu{
+        display: none;
+    }
+    section {
+        height: 1900px;
+        object-fit: cover;
+    }
 }
